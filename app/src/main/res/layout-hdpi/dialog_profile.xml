@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:background="@drawable/dialog_bg"
+    android:layout_height="wrap_content"
+
+
+    >
+
+
+        <LinearLayout
+            android:padding="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/profileImageInDialog"
+                    android:layout_width="80sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="80sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:src="@drawable/profile_image" />
+                <TextView android:id="@+id/nameInDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:padding="10sp"
+                    android:textSize="25sp"
+                    android:textColor="@color/textIconsColor"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="15dp"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <Button  android:id="@+id/sendMessageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Message"
+                    android:layout_marginRight="20sp"
+                    android:padding="10sp"
+                    android:enabled="true"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/textIconsColor"/>
+
+                <Button android:id="@+id/extraButton"
+                    android:background="@drawable/button_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accept"
+                    android:padding="10sp"
+                    android:textColor="@color/textIconsColor"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
